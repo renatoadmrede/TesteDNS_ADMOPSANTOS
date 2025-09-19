@@ -1,4 +1,4 @@
-variable "920279090818" {
+variable "project_id" {
   description = "ID do projeto no GCP"
   type        = string
 }
