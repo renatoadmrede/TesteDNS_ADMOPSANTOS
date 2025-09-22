@@ -45,3 +45,11 @@ resource "google_dns_record_set" "api6" {
   managed_zone = var.dns_zone
   rrdatas      = ["www.admopsantos.tech."]
 }
+
+resource "google_dns_record_set" "www2" {
+  name         = "www2.admopsantos.tech."
+  type         = "CNAME"
+  ttl          = 300
+  managed_zone = var.dns_zone
+  rrdatas      = ["www.admopsantos.tech."]
+}
