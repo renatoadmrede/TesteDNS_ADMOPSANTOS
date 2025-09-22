@@ -14,22 +14,6 @@ resource "google_dns_record_set" "api" {
   rrdatas      = ["www.admopsantos.tech."]
 }
 
-resource "google_dns_record_set" "api2" {
-  name         = "api2.admopsantos.tech."
-  type         = "CNAME"
-  ttl          = 300
-  managed_zone = var.dns_zone
-  rrdatas      = ["www.admopsantos.tech."]
-}
-
-resource "google_dns_record_set" "api3" {
-  name         = "api3.admopsantos.tech."
-  type         = "CNAME"
-  ttl          = 300
-  managed_zone = var.dns_zone
-  rrdatas      = ["www.admopsantos.tech."]
-}
-
 resource "google_dns_record_set" "api4" {
   name         = "api4.admopsantos.tech."
   type         = "CNAME"
